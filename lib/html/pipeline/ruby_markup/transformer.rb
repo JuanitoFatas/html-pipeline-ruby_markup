@@ -25,10 +25,10 @@ module HTML
         RubyTagPattern = %r(
           (?<!!)
           \[
-            (?<word>[^\[\(\)]+(?=\())(?<!\s)
-            \((?<reading>[^\[\]]+(?=\)))\)
+            (?<word>[^\[\(]+(?=\())(?<!\s)
+            \((?<reading>[^\)]+(?=\)))\)
           \]
-          (\((?<uri>[^\(\)]+(?=\)))\))*
+          (\((?<uri>[^\)]+(?=\)))\))*
         )x
         RubyMarkupInsideCodePattern = /`.*#{RubyTagPattern}.*`/
 
