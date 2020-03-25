@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 0.9.1
+
+Simplify Regexp [#1] by @JuanitoFatas
+
+[#1]: https://github.com/JuanitoFatas/html-pipeline-ruby_markup/pull/1
+
 ## 0.9.0
 
 2020.03.25
