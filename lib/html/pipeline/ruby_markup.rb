@@ -8,7 +8,7 @@ module HTML
     module RubyMarkup
       class Filter < HTML::Pipeline::TextFilter
         def call
-          Transformer.run(text.dup)
+          Transformer.run(text.dup.to_s)
         end
       end
     end
