@@ -6,6 +6,22 @@ require "html/pipeline/ruby_markup"
 RubyMarkup = HTML::Pipeline::RubyMarkup
 
 RSpec.describe RubyMarkup::Filter do
+  it "not error out with nil content" do
+    input = nil
+
+    result = RubyMarkup::Filter.new(input).call
+
+    expect(result).to eq ""
+  end
+
+  it "not error out with empty content" do
+    input = ""
+
+    result = RubyMarkup::Filter.new(input).call
+
+    expect(result).to eq ""
+  end
+
   it "works with content has no ruby markups" do
     input = "markdown"
 
