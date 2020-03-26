@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.9.2
+
 Handle for nil or empty content input [#2] by @JuanitoFatas
 
 [#2]: https://github.com/JuanitoFatas/html-pipeline-ruby_markup/pull/2
