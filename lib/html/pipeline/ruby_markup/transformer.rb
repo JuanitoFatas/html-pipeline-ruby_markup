@@ -35,7 +35,7 @@ module HTML
         attr_reader :content
 
         def traverser
-          @traverser ||= MarkdownTraverser.new(content)
+          @traverser ||= content.empty? ? [] : MarkdownTraverser.new(content)
         end
 
         def transform_ruby_markups!

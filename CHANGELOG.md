@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+Handle for nil or empty content input [#2] by @JuanitoFatas
+
+[#2]: https://github.com/JuanitoFatas/html-pipeline-ruby_markup/pull/2
+
 ## 0.9.1
 
 Simplify Regexp [#1] by @JuanitoFatas
